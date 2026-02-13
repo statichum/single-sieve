@@ -1,0 +1,40 @@
+lidarr:
+  url: "http://192.168.88.44:8686"
+  api_key: "e9xxxxxxxxxxxxxxxxxxxxxx897"
+
+metadata:
+  target_profile: "Album EP Single"
+  ignore_profiles:
+    - "All"
+    - "Album EP Single Demo Remix Soundtrack"
+    - "Album EP Single"
+
+scope:
+  process_full_library: true
+  artists: []
+#    - The Bug
+#    - Nine Inch Nails
+#    - Taylor Swift
+#    - Mac Demarco
+#    - clipping.
+#    - Fazerdaze
+#    - METZ
+#    - Action Bronson
+#    - Sleater-Kinney
+
+behaviour:
+  dry_run: false
+  apply_profile: true
+  suppress_duplicates: true
+  skip_unmonitored_artists: true
+  search_monitored: true
+
+timing:
+  post_refresh_cooldown_seconds: 3
+
+normalisation:
+  lowercase: true
+  strip_parentheses: true
+  strip_brackets: true
+  remove_punctuation: true
+  collapse_whitespace: true

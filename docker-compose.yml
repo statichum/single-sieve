@@ -1,0 +1,9 @@
+services:
+  single-sieve:
+    build: .
+    container_name: single-sieve
+    restart: unless-stopped
+    ports:
+      - "8095:8000"
+    volumes:
+      - ./config.yml:/app/config.yml:ro
